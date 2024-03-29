@@ -6,7 +6,7 @@
 /*   By: motoko <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 14:40:21 by motoko            #+#    #+#             */
-/*   Updated: 2024/03/20 15:07:11 by motoko           ###   ########.fr       */
+/*   Updated: 2024/03/29 16:50:53 by motoko           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,8 @@ int	main(void) {
 	}
 
 	std::cout << std::string(50, '#') << std::endl;
-
-	for (unsigned int i; i < size; i++) {
+	
+	for (unsigned int i = 0; i < size; i++) {
 		a4[i] = i * 2;
 	}
 
@@ -56,8 +56,8 @@ int	main(void) {
 
 	try {
 		std::cout << "Accessing a valid index: " << a5[3] << std::endl;
-		std::cout << "Accessing an invalid index: " << a5[5] << std::endl;
-	} catch ( Array< int >::OutOfBoundsException& e ) {
+		std::cout << "Accessing an invalid index: " << a5[0] << std::endl;
+	} catch (std::exception& e ) {
 		std::cout << "Error: " << e.what() << std::endl;
 	}
 
