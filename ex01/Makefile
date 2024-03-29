@@ -6,7 +6,7 @@
 #    By: motoko <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/02 14:26:47 by motoko            #+#    #+#              #
-#    Updated: 2024/03/14 16:40:01 by motoko           ###   ########.fr        #
+#    Updated: 2024/03/29 16:52:27 by motoko           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ VPATH			:= $(SRCS_DIR):
 SRCS			:= main.cpp		\
 
 CC				:= c++
-CFLAGS			:= -Wall -Wextra 
+CFLAGS			:= -Wall -Wextra -Werror
 
 #Debug 
 ifeq ($(DEBUG), 1)
